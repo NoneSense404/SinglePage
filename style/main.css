@@ -154,6 +154,15 @@ section.home {
   transform: scale(.98);
 }
 
+/* link of btn */
+
+[class=linkbtn] {
+  display: block;
+  text-decoration: none;
+  color: white;
+
+}
+
 @media (max-width:1068px) {
   .home-img {
     display: none;
@@ -170,3 +179,148 @@ section.home {
     font-size: 2rem;
   }
 }
+
+/* mang Page */
+.mangs {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.mangs .mang {
+  padding: 20px;
+}
+
+.mangs .mang h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #1b206e;
+}
+
+.mangs .mang:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mangs .mang .icon img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+/* Subject Page */
+.subjects {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.subjects .subject {
+  padding: 20px;
+}
+
+.subjects .subject h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #1b206e;
+}
+
+.subjects .subject:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.subjects .subject .icon img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+/* Cord Page */
+.cords {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.cords .cord {
+  padding: 20px;
+}
+
+.cords .cord h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #1b206e;
+}
+
+.cords .cord:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cords .cord .icon img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1068px) {
+  .mangs, .subjects, .cords{
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+@media (max-width: 768px) {
+  .mangs, .subjects, .cords{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* work page */
+.works {
+  margin-top: 40px;
+}
+
+.works .work {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.works .work h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #1b206e;
+  text-align: center;
+}
+
+.works .work:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.works .work img {
+  display: block;
+  max-width: 100%;
+}
+
+.border {
+	font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+	border: 5px solid;
+	padding: 1px;
+}
+
+.full {
+	border-image: linear-gradient(45deg, #3D7EAA, #FFE47A) 1;
+}
+
+/* Contact page */
