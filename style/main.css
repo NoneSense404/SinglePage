@@ -127,12 +127,18 @@ section.home {
   margin-top: 0;
 }
 
-.home-img {
+/* .home-img {
   position: absolute;
   bottom: 0;
   right: 0;
   height: 110%;
-}
+} */
+
+/* .home {
+  background-image: url(../images/home-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .home-content {
   position: relative;
@@ -324,3 +330,15 @@ section.home {
 }
 
 /* Contact page */
+
+/* copy */
+.copytext {
+  padding: 20px;
+  background-color: #eee;
+  width: 50%;
+
+}
+
+.copyimg {
+  width: 100%;
+}
