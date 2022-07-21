@@ -1,0 +1,349 @@
+/* Global Rules */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --firstColor: #BB4430;
+  --SecColor: #7EBDC2;
+  --thridColor: #F3DFA2;
+  --forthColor: #EFE6DD;
+  --backgr: #231F20;
+}
+
+body {
+  background-color: var(--backgr);
+  color: white;
+  font-family: "PT Sans";
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.container {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  /* background-color: #BB4430; */
+  text-align: center;
+  padding: 40px 40px;
+  font-size: 1.5rem;
+  position: relative;
+  color: var(--forthColor);
+  margin-bottom: 20px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 120px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #333;
+}
+
+.btn {
+  background-color: var(--firstColor);
+  padding: 10px 25px;
+  color: var(--thridColor);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(.9);
+}
+
+.btn a {
+  color: var(--thridColor);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.icon {
+  color: var(--firstColor);
+  font-size: 1.7rem;
+}
+
+
+.cont {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/backgroundImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 40px;
+  width: 100%;
+  margin-left: -14px;
+  font-size: 1.7rem;
+}
+
+h1 {
+  color: var(--firstColor);
+}
+
+
+
+/* Header */
+header .container {
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3a3b;
+  color: var(--SecColor);
+}
+
+header .text {
+  width: 20%;
+}
+
+header .logo {
+  margin-right: 5px;
+  /* color: var(--forthColor); */
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+Header .nav {
+  width: 80%;
+  padding: 20px;
+}
+
+Header .nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+Header .nav ul li {
+  list-style: none;
+  transition: border-bottom 1s ease-in-out;
+}
+
+Header .nav ul li a {
+  color: var(--SecColor);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+Header .nav ul li a:hover {
+  transform: scale(.9);
+  border-bottom: 1px solid #7EBDC2;
+}
+
+/* Admin Section */
+
+.sec-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #3f3a3b;
+
+}
+
+.sec-container .box {
+  background-color: var();
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.sec-container .box .head {
+  display: flex;
+  align-items: center;
+}
+
+.sec-container .box h3 {
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin-left: 7px;
+  color: var(--thridColor);
+}
+
+/* Cord */
+.contain {
+  margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.contain .block {
+  /* padding: 20px; */
+}
+
+.contain .block .pic img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.contain .block .name {
+  font-size: 1.5rem;
+  color: var(--thridColor);
+}
+
+.ask {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom : 10px;
+}
+
+.ask h3 {
+  font-size: 1.7rem;
+}
+
+.ask .box {
+  margin-top: 20px;
+}
+
+.ask p {
+  font-size: 1.4rem;
+  color: var(--thridColor);
+}
+
+.ask .box div {
+  background-color: #3f3a3b;
+  padding: 20px 40px;
+  margin-top: 30px;
+}
+
+.ask input {
+  border: none;
+  background-color: #3f3a3b;
+  color: #EFE6DD;
+  font-size: 1.2rem;
+}
+
+.ask button {
+  background-color: var(--firstColor);
+  padding: 11px 25px;
+  color: var(--thridColor);
+  border-radius: 5px;
+  font-weight: bold;
+  /* font-size: 1.2rem; */
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+}
+
+.ask button:hover {
+  transform: scale(.9);
+}
+
+
+
+.table section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.table .works .work {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.table .works .work img {
+  display: block;
+  max-width: 100%;
+}
+
+.table .full {
+  border-image: linear-gradient(45deg, var(--firstColor), var(--SecColor)) 1;
+}
+
+.table .border {
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  min-height: 200px;
+  border: 5px solid;
+  padding: 1px;
+}
+
+.table .works .work h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--thridColor);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:var(--SecColor); /* Set a background color */
+  color: #3f3a3b; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 12px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
